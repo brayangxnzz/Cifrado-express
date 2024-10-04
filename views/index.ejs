@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifrados Express</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    body {
+      background-image: url('/img/portada.png'); /* Aquí añades tu imagen de fondo */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los botones se ajusten automáticamente */
+      justify-content: center;
+    }
+
+    .btn-group a {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: white;
+      background-color: #007bff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      flex: 1 1 45%; /* Hace que los botones ocupen el 45% del contenedor y se ajusten */
+      max-width: 200px; /* Evita que los botones sean demasiado anchos */
+    }
+
+    .btn-group a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 576px) {
+      .btn-group a {
+        flex: 1 1 100%; /* En pantallas pequeñas, los botones ocupan el 100% del ancho */
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    /* Ajustes para pantallas medianas */
+    @media (min-width: 577px) and (max-width: 768px) {
+      .container {
+        padding: 35px;
+      }
+
+      .btn-group a {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    /* Ajustes para pantallas grandes */
+    @media (min-width: 769px) {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cifrados Express</h1>
+    <img src="/img/1.png" alt="10px" width="200px">
+    <div class="btn-group">
+      <a href="/cesar">Cifrado César</a>
+      <a href="/escitala">Cifrado Escítala</a>
+      <a href="/gost">Cifrado GOST</a>
+      <a href="/luc">Cifrado LUC</a>
+      <a href="/sha1">Cifrado SHA-1</a> <br><br>
+<a href="https://drive.google.com/file/d/1uQq5FyTtUJCh2fQ0bHjdmZu4zK_j5xyY/view?usp=sharing" class="btn btn-primary" target="_blank">
+  Ver PDF
+</a>
+
+    </div>
+  </div>
+</body>
+</html>
